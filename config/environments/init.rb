@@ -51,3 +51,12 @@ set :views, File.join(APP_ROOT, "app", "views")
 # Setup controller (C)
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
 ######################################################################
+
+TWITTER_API = YAML.load_file('config/secrets.yml')
+
+$client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = TWITTER_API['Consumer_Key']
+  config.consumer_secret     = TWITTER_API['Consumer_Secret']
+  config.access_token        = TWITTER_API['Access_Token']
+  config.access_token_secret = TWITTER_API['Access_Token_Secret']
+end
