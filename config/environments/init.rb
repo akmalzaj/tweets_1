@@ -24,6 +24,7 @@ require 'uri'
 
 require 'byebug'
 require 'yaml'
+require 'twitter'
 ######################################################################
 
 

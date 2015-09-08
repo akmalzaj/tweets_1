@@ -27,6 +27,7 @@ gem 'rspec'
 # Additional gems
 gem 'byebug'
 gem 'sinatra-flash'
+gem 'twitter'
 
 group :development, :test do
 	# Adding shotgun for local web hosting
