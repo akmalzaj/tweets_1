@@ -23,6 +23,7 @@ require 'erb'
 require 'uri'
 
 require 'byebug'
+require 'yaml'
 ######################################################################
 
 
